@@ -1,0 +1,25 @@
+
+<h1>{{name}}</h1>
+<p>{{location}}</p>
+<p>{{profession}}</p>
+
+{{#with pet}}
+
+  {{> pet}}
+
+
+{{/with}}
+
+{{#each pets}}
+
+  {{name}}
+  {{#if wellBehaved}}
+  <p>{{name}} is a well behaved {{species}}</p>
+  {{else}}
+  <p>{{name}} is a not a well behaved {{species}}</p>
+  {{/if}}
+
+  
+  
+
+{{/each}}
